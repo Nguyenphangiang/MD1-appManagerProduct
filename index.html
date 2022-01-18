@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    table,th,td{
+        border: 2px solid black;
+        padding: 20px;
+        width: 100%;
+    }
+    table *{
+        border-collapse: collapse;
+    }
+    td{
+        text-align:center;
+        font-size: 25px ;
+        color: rebeccapurple;
+    }
+    tr:nth-child(odd){
+        background-color: #a7a7f1;
+    }
+    th {
+        background-color: #19d019;
+        color: white;
+        font-size: 30px;
+    }
+    input[type=text]{
+        width: 500px;
+        height: 40px;
+        font-size: 30px;
+        border: 2px rebeccapurple;
+    }
+    button{
+        background-color: #e9d8f4;
+        border: none;
+        color: #58257b;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    </style>
+</head>
+<body>
+<input id="newProduct"  type="text" placeholder="addNewProduct">
+<button onclick="createNewProduct()">Create</button>
+<!--tao moi -->
+<div id="content">
+    <table >
+        <tr>
+            <th>Product Name</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </table>
+</div>
+<script src="myjs.js"></script>
+</body>
+</html>
